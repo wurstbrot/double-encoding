@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+   wordpress-static:
+     image: php:7.3-apache
+     volumes:
+       - ./:/var/www/html
+     ports:
+       - "8080:80"
